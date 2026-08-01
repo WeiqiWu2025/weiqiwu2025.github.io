@@ -1,0 +1,22 @@
+title: "Weiqi Wu"
+description: "Weiqi Wu's academic homepage"
+url: "https://weiqiwu2025.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Shanghai"
+
+author:
+  name: "Weiqi Wu"
+  name_cn: "吴伟琪"
+  role: "Researcher, USTC"
+  location: "Hefei, China"
+  email: "weiqiwu@ustc.edu.cn"
+  avatar: "https://avatars.githubusercontent.com/u/234541304?v=4"
+  github: "https://github.com/WeiqiWu2025"
+  researchgate: "https://www.researchgate.net/profile/Weiqi-Wu-2"
+
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+
