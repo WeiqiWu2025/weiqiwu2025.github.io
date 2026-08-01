@@ -1,0 +1,6 @@
+<ul class="plain-list news-list">
+  {% for item in site.data.news %}
+    <li><b>[{{ item.date }}]</b> 🎉 {{ item.content }}</li>
+  {% endfor %}
+</ul>
+

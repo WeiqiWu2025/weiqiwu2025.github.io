@@ -1,0 +1,26 @@
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="top-nav" aria-label="Main navigation">
+      {% for item in site.data.navigation %}
+        {% if item.children %}
+          <div class="nav-dropdown{% if page.nav_key == item.key %} active{% endif %}">
+            <div class="nav-parent">
+              <a{% if page.nav_key == item.key %} class="active"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+              <button class="dropdown-toggle" aria-label="Toggle {{ item.label }} menu" aria-expanded="false">▾</button>
+            </div>
+            <div class="dropdown-menu">
+              {% for child in item.children %}
+                <a{% if page.research_key == child.key %} class="active"{% endif %} href="{{ child.url | relative_url }}">{{ child.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <a{% if page.nav_key == item.key %} class="active"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+

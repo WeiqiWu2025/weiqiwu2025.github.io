@@ -1,0 +1,6 @@
+<ul class="project-list">
+  {% for project in site.data.projects %}
+    <li><a href="{{ project.url }}" target="_blank" rel="noreferrer"><strong>{{ project.name }}</strong></a>: {{ project.description }}</li>
+  {% endfor %}
+</ul>
+

@@ -1,0 +1,30 @@
+{% if site.data.collaborators.size > 0 %}
+  <div class="collaborators-list">
+    {% for collaborator in site.data.collaborators %}
+      <article class="collaborator-card">
+        {% if collaborator.avatar %}<img class="collaborator-avatar" src="{{ collaborator.avatar }}" alt="{{ collaborator.name }}">{% endif %}
+        <div class="collaborator-content">
+          <h2>
+            {% if collaborator.homepage %}<a href="{{ collaborator.homepage }}" target="_blank" rel="noreferrer">{{ collaborator.name }}</a>{% else %}{{ collaborator.name }}{% endif %}
+          </h2>
+          {% if collaborator.title or collaborator.affiliation %}
+            <p class="collaborator-meta">{% if collaborator.title %}{{ collaborator.title }}{% endif %}{% if collaborator.title and collaborator.affiliation %}, {% endif %}{% if collaborator.affiliation %}{{ collaborator.affiliation }}{% endif %}</p>
+          {% endif %}
+          {% if collaborator.interests %}<p><strong>Research interests:</strong> {{ collaborator.interests }}</p>{% endif %}
+          {% if collaborator.collaboration %}<p>{{ collaborator.collaboration }}</p>{% endif %}
+          {% if collaborator.publications %}
+            <h3>Joint Publications</h3>
+            <ul>
+              {% for publication in collaborator.publications %}
+                <li>{% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}{% if publication.venue %}, <em>{{ publication.venue }}</em>{% endif %}{% if publication.year %}, {{ publication.year }}{% endif %}.</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="empty-page"><p>Collaborator profiles and joint publications will be added here.</p></div>
+{% endif %}
+

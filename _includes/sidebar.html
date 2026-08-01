@@ -1,0 +1,15 @@
+<aside class="author-profile">
+  <img class="author-avatar" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+  <div class="author-content">
+    <h2>{{ site.author.name }}</h2>
+    <p class="author-bio">{{ site.author.role }}</p>
+  </div>
+  <button class="follow-toggle" aria-expanded="false">Follow</button>
+  <ul class="author-links">
+    <li><span class="icon">📍</span> {{ site.author.location }}</li>
+    <li><a href="mailto:{{ site.author.email }}"><span class="icon">✉</span> Email</a></li>
+    <li><a href="{{ site.author.researchgate }}" target="_blank" rel="noreferrer"><span class="icon">R</span> ResearchGate</a></li>
+    <li><a href="{{ site.author.github }}" target="_blank" rel="noreferrer"><span class="icon">◉</span> Github</a></li>
+  </ul>
+</aside>
+

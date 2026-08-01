@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body data-page="{{ page.nav_key }}">
+  {% include header.html %}
+  <div class="layout">
+    {% include sidebar.html %}
+    <main class="page-content">
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </div>
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>

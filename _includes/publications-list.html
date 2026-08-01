@@ -1,0 +1,16 @@
+{% for group in site.data.publications %}
+  <h2>{{ group.category }}</h2>
+  <ul class="publication-list">
+    {% for item in group.items %}
+      <li>
+        <span class="pub-tag">[{{ item.tag }}]</span>
+        {{ item.authors }}. “{{ item.title }},”
+        {% if item.venue %}<em>{{ item.venue }}</em>,{% endif %}
+        {{ item.details }}.
+        {% if item.doi %}<a href="{{ item.doi }}" target="_blank" rel="noreferrer">[DOI]</a>{% endif %}
+        {% if item.code %}<a href="{{ item.code }}" target="_blank" rel="noreferrer">[Code]</a>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
