@@ -7,7 +7,7 @@
         <li>
           <span class="pub-tag">[{{ item.tag }}]</span>
           {{ item.authors }}. “{{ item.title }},”
-          {% if item.venue %}<em>{{ item.venue }}</em>,{% endif %}
+          {% if item.venue %}{% if group.category == "Conferences" %}in {% endif %}<em>{{ item.venue }}</em>,{% endif %}
           {{ item.details }}.
           {% if item.doi %}<a href="{{ item.doi }}" target="_blank" rel="noreferrer">[DOI]</a>{% endif %}
         </li>
