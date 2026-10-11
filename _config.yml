@@ -1,5 +1,5 @@
 title: "Weiqi Wu"
-description: "Weiqi Wu's academic homepage"
+description: "Weiqi Wu's academic homepage at the University of Science and Technology of China."
 url: "https://weiqiwu2025.github.io"
 baseurl: ""
 lang: "en"
@@ -7,16 +7,16 @@ timezone: "Asia/Shanghai"
 
 author:
   name: "Weiqi Wu"
-  name_cn: "吴伟琪"
-  role: "Researcher, USTC"
+  name_cn: "吴为岂"
+  role: "Postdoctoral Researcher, USTC"
   location: "Hefei, China"
   email: "weiqiwu@ustc.edu.cn"
-  avatar: "https://avatars.githubusercontent.com/u/234541304?v=4"
+  avatar: "/assets/images/weiqiwu.jpg"
   github: "https://github.com/WeiqiWu2025"
   researchgate: "https://www.researchgate.net/profile/Weiqi-Wu-2"
+  google_scholar: "https://scholar.google.com.hk/citations?user=ZGr3e4gAAAAJ&hl=zh-CN&oi=ao"
 
 markdown: kramdown
 permalink: pretty
 exclude:
   - README.md
-

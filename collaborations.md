@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Research Collaborations
+description: Research collaborations of Weiqi Wu.
 nav_key: collaborations
 permalink: /collaborations.html
 ---

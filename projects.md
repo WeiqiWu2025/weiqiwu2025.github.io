@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+description: Open-source research projects by Weiqi Wu.
 nav_key: projects
 permalink: /projects.html
 ---
@@ -9,4 +10,3 @@ permalink: /projects.html
   <h1>Projects</h1>
   {% include projects-list.html %}
 </section>
-

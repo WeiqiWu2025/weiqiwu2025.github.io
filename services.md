@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Professional Services
+description: Professional services of Weiqi Wu.
 nav_key: services
 permalink: /services.html
 ---
