@@ -3,18 +3,16 @@
     {% for collaborator in site.data.collaborators %}
       <article class="collaborator-card">
         {% if collaborator.avatar %}<img class="collaborator-avatar" src="{{ collaborator.avatar }}" alt="{{ collaborator.name }}">{% else %}<div class="collaborator-avatar" aria-hidden="true">{{ collaborator.initials }}</div>{% endif %}
-        <div class="collaborator-content">
+        <div class="collaborator-details">
           <div class="collaborator-heading">
             <div>
               <h2>{{ collaborator.name }}</h2>
-              {% if collaborator.title or collaborator.affiliation %}<p class="collaborator-meta">{% if collaborator.title %}{{ collaborator.title }}{% endif %}{% if collaborator.title and collaborator.affiliation %}, {% endif %}{% if collaborator.affiliation %}{{ collaborator.affiliation }}{% endif %}</p>{% endif %}
+              {% if collaborator.title or collaborator.affiliation %}<p>{% if collaborator.title %}{{ collaborator.title }}{% endif %}{% if collaborator.title and collaborator.affiliation %}, {% endif %}{% if collaborator.affiliation %}{{ collaborator.affiliation }}{% endif %}</p>{% endif %}
             </div>
-            <div class="collaborator-links">
-              {% if collaborator.homepage %}<a href="{{ collaborator.homepage }}" target="_blank" rel="noreferrer">Homepage</a>{% endif %}
-              {% if collaborator.google_scholar %}<a href="{{ collaborator.google_scholar }}" target="_blank" rel="noreferrer">Google Scholar</a>{% endif %}
-            </div>
+            {% if collaborator.homepage %}<a href="{{ collaborator.homepage }}" target="_blank" rel="noreferrer">Homepage</a>{% endif %}
+            {% if collaborator.google_scholar %}<a href="{{ collaborator.google_scholar }}" target="_blank" rel="noreferrer">Google Scholar</a>{% endif %}
           </div>
-          {% if collaborator.interests %}<h3>Shared Research Interests</h3><p>{{ collaborator.interests }}</p>{% endif %}
+          {% if collaborator.interests %}<h3>Shared Research Interests</h3><p class="research-keywords">{{ collaborator.interests }}</p>{% endif %}
           {% if collaborator.journal_publications %}
             <h3>Joint Journal Publications</h3>
             <ul class="collaboration-publications">

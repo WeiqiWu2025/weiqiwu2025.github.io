@@ -6,25 +6,21 @@ nav_key: services
 permalink: /services.html
 ---
 
-<section class="anchor-section about">
+<section class="anchor-section about services-page">
   <h1>Professional Services</h1>
-  <section>
+  <section class="service-section">
     <h2>Conference Service</h2>
-    <table>
-      <thead>
-        <tr><th>Conference</th><th>Role</th><th>Year</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>6th International Conference on Computer, Remote Sensing and Aerospace (CRSA 2026)</td><td>Web Chair</td><td>2026</td></tr>
-      </tbody>
-    </table>
+    <div class="service-table conference-service">
+      <div class="service-row service-header"><strong>Conference</strong><strong>Role</strong><strong>Year</strong></div>
+      <div class="service-row"><span>6th International Conference on Computer, Remote Sensing and Aerospace (CRSA 2026)</span><span>Web Chair</span><span>2026</span></div>
+    </div>
   </section>
-  <section>
+  <section class="service-section">
     <h2>Journal Reviewer</h2>
-    <ul>
-      <li>IEEE Transactions on Mobile Computing</li>
-      <li>IEEE Internet of Things Journal</li>
-      <li>IEEE Wireless Communications Letters</li>
-    </ul>
+    <div class="service-table journal-service">
+      <div class="service-row">IEEE Transactions on Mobile Computing</div>
+      <div class="service-row">IEEE Internet of Things Journal</div>
+      <div class="service-row">IEEE Wireless Communications Letters</div>
+    </div>
   </section>
 </section>
