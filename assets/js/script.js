@@ -39,3 +39,18 @@ dropdowns.forEach((dropdown) => {
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
+const newsList = document.querySelector('.news-list[data-visible-items]');
+
+if (newsList) {
+  const updateNewsHeight = () => {
+    const visibleItems = Number(newsList.dataset.visibleItems);
+    const lastVisibleItem = newsList.children[visibleItems - 1];
+
+    newsList.style.maxHeight = lastVisibleItem
+      ? `${lastVisibleItem.getBoundingClientRect().bottom - newsList.getBoundingClientRect().top + 6}px`
+      : '';
+  };
+
+  updateNewsHeight();
+  window.addEventListener('resize', updateNewsHeight);
+}

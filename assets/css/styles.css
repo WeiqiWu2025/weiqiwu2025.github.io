@@ -46,7 +46,8 @@ a:hover { text-decoration:underline; }
 .anchor-section h2 { margin:28px 0 12px; color:#31363b; font-size:22px; }
 .plain-list,.publication-list,.project-list { margin:0; padding-left:22px; }
 .plain-list li,.publication-list li,.project-list li { margin:10px 0; padding-left:3px; }
-.news-list li { margin:7px 0; }
+.news-list { overflow-y:auto; scrollbar-gutter:stable; }
+.news-list li { margin:6px 0; }
 .news-list b { color:#444; }
 .publication-list { font-family:Arial,sans-serif; font-size:15px; }
 .publication-list li { margin:13px 0; text-align:justify; }
@@ -60,12 +61,17 @@ a:hover { text-decoration:underline; }
 .collaborators-list { margin-top:25px; }
 .collaborator-card { display:grid; grid-template-columns:110px minmax(0,1fr); gap:24px; padding:28px 0; border-top:1px solid var(--border); }
 .collaborator-card:last-child { border-bottom:1px solid var(--border); }
-.collaborator-avatar { width:100px; height:100px; object-fit:cover; border-radius:50%; }
+.collaborator-avatar { display:grid; place-items:center; width:100px; height:100px; object-fit:cover; color:#fff; background:#2f7fba; border-radius:50%; font-size:20px; font-weight:700; letter-spacing:.5px; }
+.collaborator-heading { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; }
+.collaborator-heading h2 { margin:0 0 3px; font-size:21px; }
+.collaborator-heading p { margin:0; color:var(--muted); font-size:14px; }
+.collaborator-links { display:flex; gap:14px; font-size:14px; }
 .collaborator-content h2 { margin:0 0 3px; font-size:21px; }
 .collaborator-content h3 { margin:18px 0 7px; font-size:16px; }
 .collaborator-content p { margin:5px 0 12px; }
 .collaborator-meta { color:var(--muted); font-size:14px; }
 .collaborator-content ul { margin:0; padding-left:20px; }
+.collaboration-publications li { margin:8px 0; }
 .publications-page h2 { margin:30px 0 12px; color:#31363b; font-size:22px; }
 .school-box { display:grid; grid-template-columns:92px 1fr; gap:22px; align-items:center; margin:12px 0 25px; }
 .school-logo { width:80px; height:80px; display:grid; place-items:center; color:#fff; background:#1b5195; border-radius:50%; font-weight:700; font-size:14px; }
@@ -105,5 +111,7 @@ footer { margin-top:32px; padding:24px 0; color:#9ba1a5; border-top:1px solid va
   .section-title span { font-size:23px; }
   .school-box { grid-template-columns:1fr; }
   .collaborator-card { grid-template-columns:1fr; }
+  .collaborator-heading { display:block; }
+  .collaborator-links { flex-wrap:wrap; margin-top:6px; }
   .publication-list li { text-align:left; }
 }

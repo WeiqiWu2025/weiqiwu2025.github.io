@@ -1,9 +1,16 @@
-- date: "2026.05"
-  content: "Updated and released a series of MATLAB implementations for concurrent WiFi backscatter communication."
+- date: "2026.07"
+  content: 'Our paper “<a href="https://link.springer.com/chapter/10.1007/978-981-92-2759-4_5" target="_blank" rel="noreferrer">Complexity-Aware and Response Time Enhanced Knowledge Tracing</a>” was published in <strong>KSEM 2026 proceedings</strong>.'
+- date: "2026.06"
+  content: 'Our paper “<a href="https://doi.org/10.1109/IWQoS70441.2026.11661028" target="_blank" rel="noreferrer">ClusterFi: Enabling Concurrent WiFi Backscatter Communication via Collided Signal Clustering</a>” was published in <strong>IEEE/ACM IWQoS 2026</strong>.'
 - date: "2025.02"
-  content: "Our paper “Concurrent WiFi backscatter communication using a single receiver in IoT networks” was published in <strong>Computer Networks</strong>."
-- date: "2024"
-  content: "Our paper “Leveraging Time-Shifted Orthogonal Codes for Concurrent Backscatter Communication” was published in <strong>IEEE TSUSC</strong>."
+  content: 'Our paper “<a href="https://doi.org/10.1016/j.comnet.2024.111029" target="_blank" rel="noreferrer">Concurrent WiFi backscatter communication using a single receiver in IoT networks</a>” was published in <strong>Computer Networks</strong>.'
+- date: "2024.12"
+  content: 'Our paper “<a href="https://doi.org/10.1109/TSUSC.2024.3517612" target="_blank" rel="noreferrer">Leveraging Time-Shifted Orthogonal Codes for Concurrent Backscatter Communication</a>” was published in <strong>IEEE TSUSC</strong>.'
+- date: "2024.05"
+  content: 'Our book “<a href="https://doi.org/10.1007/978-3-031-59254-6" target="_blank" rel="noreferrer">Practical Backscatter Communication for the Internet of Things</a>” was published by <strong>Springer</strong>.'
+- date: "2023.03"
+  content: 'Our paper “<a href="https://doi.org/10.1109/PERCOM56429.2023.10099216" target="_blank" rel="noreferrer">Ortho-CodeA: Orthogonal Codes Assisted Backscatter Multiple Access</a>” was published in the <strong>IEEE PerCom 2023 proceedings</strong>.'
 - date: "2022.07"
-  content: "Our survey on ambient backscatter communications was published in <strong>Computer Networks</strong>."
-
+  content: 'Our survey “<a href="https://www.sciencedirect.com/science/article/pii/S1389128622003139" target="_blank" rel="noreferrer">A survey on ambient backscatter communications: Principles, systems, applications, and challenges</a>” was published in <strong>Computer Networks</strong>.'
+- date: "2021.04"
+  content: 'Our paper “<a href="https://doi.org/10.1109/TMC.2021.3074739" target="_blank" rel="noreferrer">FLORA: Fuzzy Based Load-Balanced Opportunistic Routing for Asynchronous Duty-Cycled WSNs</a>” was published in <strong>IEEE Transactions on Mobile Computing</strong>.'
